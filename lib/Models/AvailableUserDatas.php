@@ -239,7 +239,7 @@ class AvailableUserDatas implements ModelInterface, ArrayAccess
      *
      * @return mixed
      */
-    public function offsetGet($offset) : mixed
+    public function offsetGet($offset)
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
