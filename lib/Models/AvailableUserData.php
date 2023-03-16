@@ -333,7 +333,8 @@ self::DATA_TYPE_PHYSICAL_INFORMATION,        ];
      *
      * @return mixed
      */
-    public function offsetGet($offset) : mixed
+		#[\ReturnTypeWillChange]
+    public function offsetGet($offset)
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
